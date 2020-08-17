@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../App.scss'
+import '../MainShophia.scss'
 import 'antd/dist/antd.css';
 import { Carousel } from 'antd';
 import { useSelector } from 'react-redux';

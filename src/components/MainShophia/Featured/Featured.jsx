@@ -1,9 +1,9 @@
 import React from 'react';
-import img1 from '../../assets/img/featured/1.jpg'
-import img2 from '../../assets/img/featured/2.jpg'
-import img3 from '../../assets/img/featured/3.jpg'
-import img4 from '../../assets/img/featured/4.jpg'
-import imgCenter from '../../assets/img/featured/center.jpg'
+import img1 from '../../../assets/img/featured/1.jpg'
+import img2 from '../../../assets/img/featured/2.jpg'
+import img3 from '../../../assets/img/featured/3.jpg'
+import img4 from '../../../assets/img/featured/4.jpg'
+import imgCenter from '../../../assets/img/featured/center.jpg'
 
 const Featured = () => {
    return (

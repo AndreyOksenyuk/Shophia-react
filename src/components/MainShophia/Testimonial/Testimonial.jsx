@@ -1,6 +1,6 @@
 import React from 'react';
-import imgWoman from '../../assets/img/testimonial/Layer-12.png'
-import imgMan from '../../assets/img/testimonial/Layer-13.png'
+import imgWoman from '../../../assets/img/testimonial/Layer-12.png'
+import imgMan from '../../../assets/img/testimonial/Layer-13.png'
 
 const Testimonial = () => {
    return (

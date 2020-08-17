@@ -3,22 +3,9 @@ import React from 'react';
 const Header = () => {
    return (
       <header className="header">
-         <div className="header__bar">
-            <div className="container">
-               <div className="header__bar-inner">
-                  <div className="header__bar-phone">
-                     <i className="fa fa-phone" aria-hidden="true"></i>
-                     <a href="/">  Call +001 555 801</a>
-                  </div>
-                  <div className="header__bar-link">
-                     <a href="/">WELCOME MSG!</a>
-                     <a href="/">MY ACCOUNT</a>
-                     <a href="/">MY WHIST LIST</a>
-                     <a href="/">LOGIN</a>
-                  </div>
-               </div>
-            </div>
-         </div>
+
+
+
          <div className="container">
             <div className="header__nav">
                <nav className="nav">
