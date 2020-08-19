@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Shophia-react/precache-manifest.d572dd5059f7aec2bfcc9ab0b2ceb685.js"
+  "/Shophia-react/precache-manifest.5a721eaab030bcaff3a14a181d2082a2.js"
 );
 
 self.addEventListener('message', (event) => {
