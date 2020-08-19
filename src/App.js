@@ -4,8 +4,8 @@ import 'font-awesome/css/font-awesome.min.css';
 import HeaderBarLink from './components/HeaderBarLink';
 import MainShophia from './components/MainShophia';
 import { Route, Switch } from 'react-router';
-import Login from './components/Login';
-import myAccount from './components/MyAccount';
+import Login from './components/Login/LoginContainer';
+import myAccountContainer from './components/MyAccount/MyAccountContainer';
 import ShoppingCart from './components/ShoppingCart';
 
 
@@ -17,7 +17,7 @@ function App(props) {
       <Switch>
         <Route exact path='/' component={MainShophia} />
         <Route path='/login' component={Login} />
-        <Route path='/myAccount' component={myAccount} />
+        <Route path='/myAccount' component={myAccountContainer} />
         <Route path='/cart' component={ShoppingCart} />
       </Switch>
     </div>

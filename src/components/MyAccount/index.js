@@ -1,11 +1,12 @@
 import React from 'react';
 
-const myAccount = () => {
+const MyAccount = (props) => {
+
    return (
-      <div>
+      <div className="container">
          <h3>myAccount</h3>
       </div>
    );
 }
 
-export default myAccount;
+export default MyAccount;
