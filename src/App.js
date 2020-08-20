@@ -6,7 +6,7 @@ import MainShophia from './components/MainShophia';
 import { Route, Switch } from 'react-router';
 import Login from './components/Login/LoginContainer';
 import myAccountContainer from './components/MyAccount/MyAccountContainer';
-import ShoppingCart from './components/ShoppingCart';
+import ShoppingCart from './components/ShoppingCart/ShoppingCartContainer';
 
 
 function App(props) {

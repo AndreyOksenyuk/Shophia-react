@@ -18,25 +18,27 @@ const MainShophia = () => {
 
          <Header />
 
-         <SliderMain />
+         <main>
+            <SliderMain />
 
-         <Support />
+            <Support />
 
-         <Partition />
+            <Partition />
 
-         <Featured />
+            <Featured />
 
-         <Partition />
+            <Partition />
 
-         <Recent />
+            <Recent />
 
-         <Partition />
+            <Partition />
 
-         <Brend />
+            <Brend />
 
-         <Partition />
+            <Partition />
 
-         <Testimonial />
+            <Testimonial />
+         </main>
 
          <Footer />
       </>

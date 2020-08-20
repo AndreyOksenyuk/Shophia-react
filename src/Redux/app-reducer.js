@@ -21,6 +21,8 @@ import imgVisaImg from '../assets/img/Footer/Visa.png'
 
 import imgSlider1 from '../assets/img/main-slider/1.jpg'
 
+const SET_IS_ADDED_PRODUCT_IN_CART = 'app-reducer/SET_IS_ADDED_PRODUCT_IN_CART'
+
 let initialState = {
    brendImg: [imgOurBrand1, imgOurBrand2, imgOurBrand3, imgOurBrand4, imgOurBrand5, imgOurBrand6],
    meinSlider: [
@@ -51,48 +53,80 @@ let initialState = {
          img: imgRecent1,
          discount: true,
          discountValue: 50,
+         title: 'Cool and not expensive stuff',
+         isAdded: false,
+         price: 250,
+         count: 1,
       },
       {
          id: 2,
          img: imgRecent2,
          discount: true,
          discountValue: 40,
+         title: 'Cool and not expensive stuff',
+         isAdded: false,
+         price: 200,
+         count: 1,
       },
       {
          id: 3,
          img: imgRecent3,
          discount: true,
          discountValue: 30,
+         title: 'Cool and not expensive stuff',
+         isAdded: false,
+         price: 600,
+         count: 1,
       },
       {
          id: 4,
          img: imgRecent4,
          discount: false,
          discountValue: 55,
+         title: 'Cool and not expensive stuff',
+         isAdded: false,
+         price: 240,
+         count: 1,
       },
       {
          id: 5,
          img: imgRecent5,
          discount: true,
          discountValue: 70,
+         title: 'Cool and not expensive stuff',
+         isAdded: false,
+         price: 130,
+         count: 1,
       },
       {
          id: 6,
          img: imgRecent6,
          discount: false,
          discountValue: 40,
+         title: 'Cool and not expensive stuff',
+         isAdded: false,
+         price: 90,
+         count: 1,
       },
       {
          id: 7,
          img: imgRecent7,
          discount: false,
          discountValue: 40,
+         title: 'Cool and not expensive stuff',
+         isAdded: false,
+         price: 100,
+         count: 1,
       },
       {
          id: 8,
          img: imgRecent8,
          discount: true,
          discountValue: 10,
+         title: 'Cool and not expensive stuff',
+         isAdded: false,
+         price: 310,
+         count: 1,
       },
    ],
    footerBrendImg: [imgAmericanExpress, imgDiscover, imgMastercard, imgVisaImg]
@@ -100,9 +134,24 @@ let initialState = {
 
 const APP_REDUSER = (state = initialState, action) => {
    switch (action.type) {
+      case SET_IS_ADDED_PRODUCT_IN_CART:
+         return {
+            ...state,
+            recent: state.recent.map(e => e.id === action.id 
+               ? { ...e, isAdded: action.boolean } 
+               : e
+            )
+         }
       default:
          return state
    }
 }
+
+export const setIsAdded = (boolean, id) => ({
+   type: SET_IS_ADDED_PRODUCT_IN_CART,
+   boolean, id
+})
+
+
 
 export default APP_REDUSER;

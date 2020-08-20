@@ -4,7 +4,7 @@ const SET_LOGIN_AND_PASSWORD = 'auth-reduser/SET_LOGIN_AND_PASSWORD'
 let initialState = {
    isAuth: false,
    login: 'user',
-   password: 'user123',
+   password: 'user',
 }
 
 const AUTH_REDUSER = (state = initialState, action) => {

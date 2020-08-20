@@ -1,5 +1,5 @@
 import React from 'react';
-import Login from '.';
+import Login from './Login';
 import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { setAuthAC, setLoginAndPasswordAC } from '../../Redux/auth-reducer'

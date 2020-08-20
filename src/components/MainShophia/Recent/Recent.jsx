@@ -1,8 +1,26 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { setProductCartAC } from '../../../Redux/cart-reducer';
+import 'antd/dist/antd.css';
+import { message } from 'antd';
+import { setIsAdded } from '../../../Redux/app-reducer';
+
 
 const Recent = () => {
-   let recent = useSelector(state => state.app.recent)
+   const recent = useSelector(state => state.app.recent)
+   const dispatch = useDispatch()
+
+
+   const onAddToCart = (item) => {
+      if (item.isAdded) {
+         message.warning('The product has already been added')
+      }
+      else{
+         dispatch(setProductCartAC(item))
+         dispatch(setIsAdded(true, item.id))
+         message.success('Product added to the shopping cart') 
+      }
+   }
 
    return (
       <div className="container">
@@ -18,7 +36,17 @@ const Recent = () => {
                         </div>
 
                         <div className="recent__item-blackout"></div>
-                        <a href="/" className="btn recent__item-btn">+ Add to cart</a>
+                        
+                        <button
+                           style={item.isAdded ? {color: 'green'} : {color: 'white'}} 
+                           className="btn recent__item-btn" 
+                           onClick={() => onAddToCart(item)}
+                        >
+                           {item.isAdded 
+                              ?  'Already added'
+                              : '+ Add to cart'
+                           } 
+                        </button>
                      </div>
                   )
                })
