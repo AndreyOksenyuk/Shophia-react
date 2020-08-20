@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "51e55d818233501c1abe2e700ee79645",
+    "revision": "0c9c13667863a1e2fdfaebb6ffac79e1",
     "url": "/Shophia-react/index.html"
   },
   {
-    "revision": "e99c4a2482c05a54c0dd",
+    "revision": "9113e4d41e70879f9695",
     "url": "/Shophia-react/static/css/2.f15748dc.chunk.css"
   },
   {
-    "revision": "7b890adcf3e906d17c28",
-    "url": "/Shophia-react/static/css/main.717ecd98.chunk.css"
+    "revision": "c0b46795027138e8204d",
+    "url": "/Shophia-react/static/css/main.d655c668.chunk.css"
   },
   {
-    "revision": "e99c4a2482c05a54c0dd",
-    "url": "/Shophia-react/static/js/2.03a55a76.chunk.js"
+    "revision": "9113e4d41e70879f9695",
+    "url": "/Shophia-react/static/js/2.91d4bc86.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/Shophia-react/static/js/2.03a55a76.chunk.js.LICENSE.txt"
+    "url": "/Shophia-react/static/js/2.91d4bc86.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7b890adcf3e906d17c28",
-    "url": "/Shophia-react/static/js/main.4542634a.chunk.js"
+    "revision": "c0b46795027138e8204d",
+    "url": "/Shophia-react/static/js/main.1bf0b551.chunk.js"
   },
   {
     "revision": "06e63adf69c97c1f3f99",
