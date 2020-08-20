@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Shophia-react/static/css/main.16c49a1d.chunk.css",
-    "main.js": "/Shophia-react/static/js/main.d3aed84e.chunk.js",
-    "main.js.map": "/Shophia-react/static/js/main.d3aed84e.chunk.js.map",
+    "main.css": "/Shophia-react/static/css/main.717ecd98.chunk.css",
+    "main.js": "/Shophia-react/static/js/main.4542634a.chunk.js",
+    "main.js.map": "/Shophia-react/static/js/main.4542634a.chunk.js.map",
     "runtime-main.js": "/Shophia-react/static/js/runtime-main.eaa37088.js",
     "runtime-main.js.map": "/Shophia-react/static/js/runtime-main.eaa37088.js.map",
     "static/css/2.f15748dc.chunk.css": "/Shophia-react/static/css/2.f15748dc.chunk.css",
-    "static/js/2.b579c500.chunk.js": "/Shophia-react/static/js/2.b579c500.chunk.js",
-    "static/js/2.b579c500.chunk.js.map": "/Shophia-react/static/js/2.b579c500.chunk.js.map",
+    "static/js/2.03a55a76.chunk.js": "/Shophia-react/static/js/2.03a55a76.chunk.js",
+    "static/js/2.03a55a76.chunk.js.map": "/Shophia-react/static/js/2.03a55a76.chunk.js.map",
     "index.html": "/Shophia-react/index.html",
-    "precache-manifest.5d1fb3723cf9b33eb33dc40f42c5df11.js": "/Shophia-react/precache-manifest.5d1fb3723cf9b33eb33dc40f42c5df11.js",
+    "precache-manifest.3f36783fe4bc5942a3ab18cc52ca4eae.js": "/Shophia-react/precache-manifest.3f36783fe4bc5942a3ab18cc52ca4eae.js",
     "service-worker.js": "/Shophia-react/service-worker.js",
     "static/css/2.f15748dc.chunk.css.map": "/Shophia-react/static/css/2.f15748dc.chunk.css.map",
-    "static/css/main.16c49a1d.chunk.css.map": "/Shophia-react/static/css/main.16c49a1d.chunk.css.map",
-    "static/js/2.b579c500.chunk.js.LICENSE.txt": "/Shophia-react/static/js/2.b579c500.chunk.js.LICENSE.txt",
+    "static/css/main.717ecd98.chunk.css.map": "/Shophia-react/static/css/main.717ecd98.chunk.css.map",
+    "static/js/2.03a55a76.chunk.js.LICENSE.txt": "/Shophia-react/static/js/2.03a55a76.chunk.js.LICENSE.txt",
     "static/media/1.jpg": "/Shophia-react/static/media/1.9db5a286.jpg",
     "static/media/2.jpg": "/Shophia-react/static/media/2.b929765d.jpg",
     "static/media/3.jpg": "/Shophia-react/static/media/3.613fcf7d.jpg",
@@ -31,8 +31,8 @@
   "entrypoints": [
     "static/js/runtime-main.eaa37088.js",
     "static/css/2.f15748dc.chunk.css",
-    "static/js/2.b579c500.chunk.js",
-    "static/css/main.16c49a1d.chunk.css",
-    "static/js/main.d3aed84e.chunk.js"
+    "static/js/2.03a55a76.chunk.js",
+    "static/css/main.717ecd98.chunk.css",
+    "static/js/main.4542634a.chunk.js"
   ]
 }
