@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
 import style from './ShoppingCart.module.scss'
 import 'antd/dist/antd.css';
-import { Drawer, Button } from 'antd';
+import { Button } from 'antd';
 import ProductCard from './ProductCard/ProductCard';
+import DrawerCart from './DrawerCart/DrawerCart';
 
-const ShoppingCart = ({ productCards, removeFromCart, setIsAdded, changeCountProduct }) => {
+const ShoppingCart = ({ productCards, 
+   removeFromCart, setIsAdded, changeCountProduct, 
+   clearShopingCart, setOrder, order}) => {
+
    const [visible, setVisible] = useState(false);
 
    const showDrawer = () => {
@@ -18,28 +22,31 @@ const ShoppingCart = ({ productCards, removeFromCart, setIsAdded, changeCountPro
 
    return (
       <div className="container">
-         <h3>ShoppingCart</h3>
-         <Button type="primary" onClick={showDrawer}>More detailed</Button>
-         <Drawer
-            width={600}
-            title="Basic Drawer"
-            placement="right"
-            closable={false}
-            onClose={onClose}
-            visible={visible}
-         >
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-         </Drawer>
+         <div className={style.ShoppingCart}>
 
-         <div className={style.product_card_list}>
-            <ProductCard 
-               cards={productCards} 
-               removeFromCart={removeFromCart} 
-               setIsAdded={setIsAdded}
-               changeCountProduct={changeCountProduct}
+            <DrawerCart 
+               onClose={onClose} 
+               visible={visible}
+               productCards={productCards}
+               clearShopingCart={clearShopingCart}
+               setOrder={setOrder}
+               order={order}
             />
+
+            {productCards.length === 0
+               ? <h3 className={style.textNoProduct}>There are no products in the cart</h3>
+               : <div className={style.product_card_list}>
+                  <Button onClick={showDrawer} className={style.showMore_btn}>More detailed</Button>
+                  <ProductCard
+                     cards={productCards}
+                     removeFromCart={removeFromCart}
+                     setIsAdded={setIsAdded}
+                     changeCountProduct={changeCountProduct}
+                     
+                  />
+                  </div>
+            }
+
          </div>
       </div>
    );

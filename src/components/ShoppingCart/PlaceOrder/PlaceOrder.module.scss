@@ -1,0 +1,26 @@
+.placeOrder {
+
+}
+
+.orderBtn {
+   padding: 5px 10px;
+   color: honeydew;
+   background-color: #389e0d;
+   border: none;
+   margin-top: 30px;
+   border-radius: 5px;
+
+   cursor: pointer;
+
+   &:hover {
+      background-color: #237804;
+   }
+
+   &:focus {
+      background-color: #389e0d;
+   }
+}
+
+.formOrder{
+
+}

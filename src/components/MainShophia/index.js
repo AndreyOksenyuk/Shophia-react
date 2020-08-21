@@ -23,19 +23,19 @@ const MainShophia = () => {
 
             <Support />
 
-            <Partition />
+            <Partition text={'Feature'}/>
 
             <Featured />
 
-            <Partition />
+            <Partition text={'Recent'}/>
 
             <Recent />
 
-            <Partition />
+            <Partition text={'Brend'}/>
 
             <Brend />
 
-            <Partition />
+            <Partition text={'Testimonial'}/>
 
             <Testimonial />
          </main>

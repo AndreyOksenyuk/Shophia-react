@@ -2,6 +2,8 @@
 const SET_PRODUCT_CART = 'cart-reducer/SET_PRODUCT_CART'
 const REMOVE_FROM_CART = 'cart-reducer/REMOVE_FROM_CART'
 const CHANGE_COUNT_PRODUCT = 'app-reducer/CHANGE_COUNT_PRODUCT'
+const CLEAR_SHOPING_CART = 'app-reducer/CLEAR_SHOPING_CART'
+const SET_ORDER = 'app-reducer/SET_ORDER'
 
 let initialState = {
    productCards: [
@@ -15,7 +17,9 @@ let initialState = {
       //    price: 130,
       //    count: 1,
       // },
-   ]
+   ],
+
+   order: []
 }
 
 const PRODUCT_CART_REDUCER = (state = initialState, action) => {
@@ -38,6 +42,16 @@ const PRODUCT_CART_REDUCER = (state = initialState, action) => {
                : e
             )
          }
+      case CLEAR_SHOPING_CART:
+         return{
+            ...state,
+            productCards: []
+         }
+      case SET_ORDER:
+         return{
+            ...state,
+            order: action.obj
+         }
       default:
          return state;
    }
@@ -57,6 +71,15 @@ export const removeFromCart = (id) => ({
 export const changeCountProduct = (id, symbol) => ({
    type: CHANGE_COUNT_PRODUCT,
    id, symbol
+})
+
+export const clearShopingCart = () => ({
+   type: CLEAR_SHOPING_CART
+})
+
+export const setOrder = (obj) => ({
+   type: SET_ORDER,
+   obj,
 })
 
 export default PRODUCT_CART_REDUCER;

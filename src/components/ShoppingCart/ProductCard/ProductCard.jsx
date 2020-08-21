@@ -45,7 +45,7 @@ const ProductCard = ({ cards, removeFromCart, setIsAdded, changeCountProduct }) 
                               type="danger" 
                               icon={<MinusOutlined />} 
                               size='large'
-                              onClick={() => onMinusCount(card.id, card.count)} 
+                              onClick={() => onMinusCount(card.id, card.count)}
                            />,
                               <p className={style.countNamber}>{card.count}</p>,
                            <Button 

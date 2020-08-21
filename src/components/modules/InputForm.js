@@ -1,6 +1,6 @@
 import React from 'react';
 
-const LoginReduxForm = ({ input, meta, ...props }) => {
+const InputFormValidation = ({ input, meta, ...props }) => {
    const styleErrorText = {
       color: 'red'
    }
@@ -21,4 +21,4 @@ const LoginReduxForm = ({ input, meta, ...props }) => {
    );
 }
 
-export default LoginReduxForm;
+export default InputFormValidation;

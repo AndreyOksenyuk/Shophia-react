@@ -15,10 +15,10 @@ const Recent = () => {
       if (item.isAdded) {
          message.warning('The product has already been added')
       }
-      else{
+      else {
          dispatch(setProductCartAC(item))
          dispatch(setIsAdded(true, item.id))
-         message.success('Product added to the shopping cart') 
+         message.success('Product added to the shopping cart')
       }
    }
 
@@ -30,22 +30,30 @@ const Recent = () => {
                   return (
                      <div className="recent__item" key={item.id}>
                         <img src={item.img} alt="clothes" />
-                        <div className="recent__item-discount" 
-                           style={item.discount ? {display: 'flex'} : { display: 'none' }}>
+                        <div className="recent__item-discount"
+                           style={item.discount ? { display: 'flex' } : { display: 'none' }}>
                            <p>{item.discountValue}<span>%</span></p>
                         </div>
 
                         <div className="recent__item-blackout"></div>
-                        
+                        <div className='recent__item-price'>
+                           {item.discount
+                              ? <><h4><span >{item.price} $</span></h4>
+                                 <h3><span>{+item.price - (+item.price / 100 * item.discountValue)} $</span></h3>
+                              </>
+                              : <p>{item.price} $</p>
+                           }
+                        </div>
+
                         <button
-                           style={item.isAdded ? {color: 'green'} : {color: 'white'}} 
-                           className="btn recent__item-btn" 
+                           style={item.isAdded ? { color: 'green' } : { color: 'white' }}
+                           className="btn recent__item-btn"
                            onClick={() => onAddToCart(item)}
                         >
-                           {item.isAdded 
-                              ?  'Already added'
+                           {item.isAdded
+                              ? 'Already added'
                               : '+ Add to cart'
-                           } 
+                           }
                         </button>
                      </div>
                   )
