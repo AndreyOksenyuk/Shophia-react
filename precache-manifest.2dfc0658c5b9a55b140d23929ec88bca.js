@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e8095e86c8710f3cb7f9b7a583c033be",
+    "revision": "87a30900e30d46a18c868dace88a5688",
     "url": "/Shophia-react/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Shophia-react/static/css/2.f15748dc.chunk.css"
   },
   {
-    "revision": "f867dc8b744909b3bf42",
+    "revision": "8e225f1cdf1df6c3797c",
     "url": "/Shophia-react/static/css/main.c5dd2536.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Shophia-react/static/js/2.9c204f4c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f867dc8b744909b3bf42",
-    "url": "/Shophia-react/static/js/main.28be47f0.chunk.js"
+    "revision": "8e225f1cdf1df6c3797c",
+    "url": "/Shophia-react/static/js/main.c621f453.chunk.js"
   },
   {
     "revision": "06e63adf69c97c1f3f99",

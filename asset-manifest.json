@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Shophia-react/static/css/main.c5dd2536.chunk.css",
-    "main.js": "/Shophia-react/static/js/main.28be47f0.chunk.js",
-    "main.js.map": "/Shophia-react/static/js/main.28be47f0.chunk.js.map",
+    "main.js": "/Shophia-react/static/js/main.c621f453.chunk.js",
+    "main.js.map": "/Shophia-react/static/js/main.c621f453.chunk.js.map",
     "runtime-main.js": "/Shophia-react/static/js/runtime-main.eaa37088.js",
     "runtime-main.js.map": "/Shophia-react/static/js/runtime-main.eaa37088.js.map",
     "static/css/2.f15748dc.chunk.css": "/Shophia-react/static/css/2.f15748dc.chunk.css",
     "static/js/2.9c204f4c.chunk.js": "/Shophia-react/static/js/2.9c204f4c.chunk.js",
     "static/js/2.9c204f4c.chunk.js.map": "/Shophia-react/static/js/2.9c204f4c.chunk.js.map",
     "index.html": "/Shophia-react/index.html",
-    "precache-manifest.881ced50ee2b1a7e23d03e73c2696464.js": "/Shophia-react/precache-manifest.881ced50ee2b1a7e23d03e73c2696464.js",
+    "precache-manifest.2dfc0658c5b9a55b140d23929ec88bca.js": "/Shophia-react/precache-manifest.2dfc0658c5b9a55b140d23929ec88bca.js",
     "service-worker.js": "/Shophia-react/service-worker.js",
     "static/css/2.f15748dc.chunk.css.map": "/Shophia-react/static/css/2.f15748dc.chunk.css.map",
     "static/css/main.c5dd2536.chunk.css.map": "/Shophia-react/static/css/main.c5dd2536.chunk.css.map",
@@ -34,6 +34,6 @@
     "static/css/2.f15748dc.chunk.css",
     "static/js/2.9c204f4c.chunk.js",
     "static/css/main.c5dd2536.chunk.css",
-    "static/js/main.28be47f0.chunk.js"
+    "static/js/main.c621f453.chunk.js"
   ]
 }
